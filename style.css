@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -94,12 +98,17 @@ a:hover {
 
 img {
 	height: auto;
-  width: 60px;
+  width: 100px;
   transition: width 0.5s ease;
 }
 
 img:hover {
 	width:140px;
+}
+
+h1, h2 {
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  margin-bottom: 20px;
 }
 
 .about__main_info {
@@ -121,7 +130,7 @@ img:hover {
 
 .links_info a{
   margin: 0 6px;
-  font-size: 1.8rem;
+  font-size: 3rem;
   color: #fff;
   -webkit-transition: .8s cubic-bezier(.68,-.55,.265,1.55);
   transition: .8s cubic-bezier(.68,-.55,.265,1.55);
@@ -131,14 +140,18 @@ img:hover {
   color: #B1A3B8;
 }
 
+.links_info li {
+  list-style-type: none;
+  display: inline;
+}
+
 .contacts,
 .summary {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.6rem;
 }
-
 
 .skills__main,
 .examples__main,
@@ -149,7 +162,7 @@ img:hover {
   margin-top: 3.5rem;
   width: 100%;
   height: auto;
-  background: aliceblue;
+  background: white;
   padding: 28px 68px;
 }
 
@@ -177,7 +190,7 @@ img:hover {
 .skills_group {
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: #B1A3B8;
 }
 
@@ -219,7 +232,8 @@ img:hover {
 .title_company {
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  color: #B1A3B8;
 }
 
 .footer {
@@ -230,4 +244,8 @@ img:hover {
   align-items: center;
   justify-content: center;
   background: #DBD2DF;
+}
+
+.footer p {
+  font-size: 50px;
 }
