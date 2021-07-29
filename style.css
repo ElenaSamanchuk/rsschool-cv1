@@ -244,6 +244,21 @@ h1, h2 {
   color: #B1A3B8;
 }
 
+.photo {
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 280px;
+  height: auto;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 0px;
+}
+
+.zoom a>img:hover{ 
+  width:290px; 
+  border-radius: 10px;
+  box-shadow: 0 0 5px #666666;  
+}
+
 .footer {
   margin: 0 auto;
   margin-top: 3.5rem;
